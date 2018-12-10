@@ -1,0 +1,147 @@
+
+   
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00131b+0,003043+100 */
+body{   
+width: 100%;
+height: 100%;
+display: block;
+background: #00131b; /* Old browsers */
+background: -moz-linear-gradient(top, #00131b 0%, #003043 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #00131b 0%,#003043 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #00131b 0%,#003043 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00131b', endColorstr='#003043',GradientType=0 ); /* IE6-9 */
+}
+
+section#intro{
+    height:100vh;
+    .fin-int-logo{
+        display: block;
+        margin: 10vh auto 0 auto;
+        width: 300px;
+    }
+    p{
+        color: white;
+    }
+    .moon{
+    position: absolute;
+    right:100px;
+    top:100px;
+    }
+
+    .top-star-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+        .star{
+            width:50px;
+            height:50px;
+            background-position: center top;
+            background-image: url("../img/star.png")
+            }
+            .star:nth-child(1) {
+            position:absolute;
+            left: 10%;
+            top: 10%;
+            }
+            .star:nth-child(2) {
+            position:absolute;
+            left: 20%;
+            top: 20%;
+            }
+            .star:nth-child(3) {
+            position:absolute;
+            left: 30%;
+            top: 30%;
+            }
+            .star:nth-child(4) {
+            position:absolute;
+            left: 40%;
+            top: 40%;
+            }
+            .star:nth-child(5) {
+            position:absolute;
+            left: 50%;
+            top: 50%;
+        }
+    }
+    
+}
+
+
+
+$ani-speed: 2s;
+$ani-delay: 1s;
+
+.arrow-container {
+    height:100px;
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+        left: 50%;
+        top: 50%;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-first {
+    animation: arrow-movement $ani-speed ease-in-out infinite;
+}
+.arrow-second {
+    animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 3px; 
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 30px;
+}
+
+.arrow:before {
+    transform: rotate(45deg) translateX(-23%);
+    transform-origin: top left;
+}
+
+.arrow:after {
+    transform: rotate(-45deg) translateX(23%);
+    transform-origin: top right;
+}
+
+// Animation
+@keyframes arrow-movement {
+    0% { 
+        opacity: 0;
+        top: 45%;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+section#clouds{
+    height:100vh;
+    .fin-int-logo{
+        display: block;
+        margin: 10vh auto 0 auto;
+        width: 300px;
+    }
+    p{
+        color: white;
+    }
+}

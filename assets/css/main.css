@@ -1,0 +1,170 @@
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00131b+0,003043+100 */
+body {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #00131b;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#00131b), to(#003043));
+  background: linear-gradient(to bottom, #00131b 0%, #003043 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00131b', endColorstr='#003043',GradientType=0 );
+  /* IE6-9 */
+}
+
+section#intro {
+  height: 100vh;
+}
+
+section#intro .fin-int-logo {
+  display: block;
+  margin: 10vh auto 0 auto;
+  width: 300px;
+}
+
+section#intro p {
+  color: white;
+}
+
+section#intro .moon {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+section#intro .top-star-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+section#intro .top-star-wrap .star {
+  width: 50px;
+  height: 50px;
+  background-position: center top;
+  background-image: url("../img/star.png");
+}
+
+section#intro .top-star-wrap .star:nth-child(1) {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+section#intro .top-star-wrap .star:nth-child(2) {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+section#intro .top-star-wrap .star:nth-child(3) {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+
+section#intro .top-star-wrap .star:nth-child(4) {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+
+section#intro .top-star-wrap .star:nth-child(5) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.arrow-container {
+  height: 100px;
+}
+
+.arrow {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-first {
+  -webkit-animation: arrow-movement 2s ease-in-out infinite;
+          animation: arrow-movement 2s ease-in-out infinite;
+}
+
+.arrow-second {
+  -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
+          animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+
+.arrow:before {
+  -webkit-transform: rotate(45deg) translateX(-23%);
+          transform: rotate(45deg) translateX(-23%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.arrow:after {
+  -webkit-transform: rotate(-45deg) translateX(23%);
+          transform: rotate(-45deg) translateX(23%);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+@-webkit-keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+section#clouds {
+  height: 100vh;
+}
+
+section#clouds .fin-int-logo {
+  display: block;
+  margin: 10vh auto 0 auto;
+  width: 300px;
+}
+
+section#clouds p {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
