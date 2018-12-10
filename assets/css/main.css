@@ -1,4 +1,4 @@
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00131b+0,003043+100 */
+/* 767 snap to mobile Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00131b+0,003043+100 */
 body {
   width: 100%;
   height: 100%;
@@ -32,6 +32,25 @@ section#intro .moon {
   position: absolute;
   right: 100px;
   top: 100px;
+}
+
+section#intro .bg-icon {
+  font-size: 416px;
+  color: white;
+  position: absolute;
+  left: 10%;
+  top: 110%;
+}
+
+@media (max-width: 767px) {
+  section#intro {
+    font-size: 150px;
+    left: 5%;
+  }
+}
+
+section#intro span.fas.fa-fingerprint {
+  opacity: .1;
 }
 
 section#intro .top-star-wrap {
