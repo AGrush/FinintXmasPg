@@ -17,22 +17,22 @@
 <body>
     <section id="intro">
         
-    <div class="top-star-wrap">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
+    <div class="top-star-wrap bg-icon">
+        <div class="star" data-scroll-speed="6"></div>
+        <div class="star" data-scroll-speed="4"></div>
+        <div class="star" data-scroll-speed="9"></div>
+        <div class="star" data-scroll-speed="3"></div>
+        <div class="star" data-scroll-speed="6"></div>
+        <div class="star" data-scroll-speed="8"></div>
+        <div class="star" data-scroll-speed="7"></div>
+        <div class="star" data-scroll-speed="4"></div>
+        <div class="star" data-scroll-speed="7"></div>
+        <div class="star" data-scroll-speed="2"></div>
     </div>
     
-    <div class="top-star-wrap bg-icon" data-scroll-speed="1">
+    <!-- <div class="top-star-wrap bg-icon" data-scroll-speed="1">
         <span class="fas fa-fingerprint"></span>
-    </div>
+    </div> -->
 
     <div class="moon">
         <img class="fin-int-moon" src="assets/img/moon.png" alt="Fin International Logo">
@@ -55,23 +55,38 @@
             </div>
 
             <div class="clearfix"></div>
+            
+
             <div class="arrow-container col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
-                <a href="#">
-            <div class="arrow arrow-first"></div>
-            <div class="arrow arrow-second"></div>
-            <div id="circle"></div>
-            </a>
+
+                <a class="down-arrow" href="#">
+                    <div class="arrow arrow-first"></div>
+                    <div class="arrow arrow-second"></div>
+                </a>
+
             </div>
         </div>
     </div>
 
     </section>
 
-
+    
 
 
     <section id="clouds">    
-
+        <div id="snowflakeContainer">
+            <img class="snowflake noselect" src="assets/img/snow.png">
+        </div>
+        
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-4 offset-lg-2 ticker-main-wrap">
+            <div class="ticker-wrap">
+                <div class="ticker">
+                    <div class="ticker__item">Merry Christmas</div>
+                    <div class="ticker__item">Merry Christmas</div>
+                    <div class="ticker__item">Merry Christmas</div>
+                </div>
+            </div>
+        </div>
 
     </section>
 </body>
@@ -80,5 +95,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="assets/js/fallingsnow_v6.js"></script>
 <script src="assets/js/main.js"></script>
 </html>
