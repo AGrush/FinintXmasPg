@@ -29,7 +29,7 @@ $(function () {
 
 ////////////snowlake.js//////////////////////
 $(window).scroll(function () {
-    truckPos = $(".thetruck").offset().top - $(".thetruck").height();
+    
     totalDepth = $("body").scrollTop() + $(window).height();
         $("#snowflakeContainer").css({ 'top': totalDepth * 3.1 });
 });

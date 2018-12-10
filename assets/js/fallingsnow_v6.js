@@ -81,7 +81,7 @@ Snowflake.prototype.update = function () {
     setTranslate3DTransform(this.element, Math.round(this.xPos), Math.round(this.yPos));
     
     // if snowflake goes below the browser window, move it back to the top
-    if (this.yPos > browserHeight) {
+    if (this.yPos > browserHeight - 50) {
     	this.yPos = -50;
     }
 }
