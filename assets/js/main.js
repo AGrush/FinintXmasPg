@@ -1,3 +1,5 @@
+
+///////////////PARRALAX/////////////////////
 // icons change scroll speed
 $.fn.moveIt = function () {
     var $window = $(window);
@@ -23,11 +25,20 @@ moveItItem.prototype.update = function (scrollTop) {
 $(function () {
     $('[data-scroll-speed]').moveIt();
 });
+/////////////END PARRALAX////////////////////
 
-
-
+////////////snowlake.js//////////////////////
 $(window).scroll(function () {
     truckPos = $(".thetruck").offset().top - $(".thetruck").height();
     totalDepth = $("body").scrollTop() + $(window).height();
         $("#snowflakeContainer").css({ 'top': totalDepth * 3.1 });
 });
+////////end snowflake.js//////////////////////
+
+////////////greensock clouds//////////////////////
+var windowwidth = $(window).width(); 
+var stalkAnim = new TimelineMax({ repeat: -1 });
+stalkAnim.fromTo('#cloud1', 3, { left: -300, ease: Power0.easeNone, delay: 0, scale: 0.7 }, { left: windowwidth, ease: Power0.easeNone });
+
+
+////////////end greensock clouds//////////////////////

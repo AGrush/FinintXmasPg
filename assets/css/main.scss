@@ -11,7 +11,10 @@ background: -webkit-linear-gradient(top, #00131b 0%,#003043 100%); /* Chrome10-2
 background: linear-gradient(to bottom, #00131b 0%,#003043 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00131b', endColorstr='#003043',GradientType=0 ); /* IE6-9 */
 }
-
+html{
+  
+  overflow-x:hidden;
+}
 section#intro{
     height:100vh;
     .fin-int-logo{
@@ -268,10 +271,25 @@ section#clouds{
     position: absolute;
     color: #FFFFFF;
     user-select: none;
-    z-index: 1000;
+    z-index: 0;
     pointer-events: none;
 }
 .snowflake:hover {
     cursor: none;
 }
 ////////////cloud section////////////
+
+#cloud1 {  
+  display: block;
+  transform: translateY(-200px);
+  position: absolute;
+  margin: 0 auto;
+  width: 350px;
+  height: 300px;
+  z-index: 1000;
+  background: url("/assets/img/cloud1.png");
+  animation: alternate play .8s steps(6) infinite;
+}
+// @keyframes play {
+//   100% { background-position: -900px; }
+// }
